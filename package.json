@@ -1,0 +1,40 @@
+{
+  "name": "next-vscode",
+  "version": "1.0.0",
+  "description": "VSCode-web embedded in a Next.js app",
+  "main": "index.js",
+  "scripts": {
+    "postinstall": "npm install --prefix driver",
+    "dev": "npm run dev --prefix driver",
+    "start": "npm run start --prefix driver",
+    "build": "node build.js",
+    "format": "biome format --write .",
+    "format:check": "biome format .",
+    "lint": "biome lint --write .",
+    "lint:check": "biome lint .",
+    "check": "biome check --write .",
+    "check:ci": "biome check ."
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/3p3r/next-vscode.git"
+  },
+  "keywords": [],
+  "author": "Sepehr Laal",
+  "license": "UNLICENSED",
+  "bugs": {
+    "url": "https://github.com/3p3r/next-vscode/issues"
+  },
+  "homepage": "https://github.com/3p3r/next-vscode#readme",
+  "dependencies": {
+    "semver": "^7.7.3",
+    "tsx": "^4.21.0",
+    "zx": "^8.8.5"
+  },
+  "devDependencies": {
+    "@biomejs/biome": "2.3.11",
+    "@opennextjs/aws": "^3.9.7",
+    "@types/node": "^25.0.6",
+    "@types/semver": "^7.7.1"
+  }
+}
